@@ -10,9 +10,9 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 # ---------- AWS S3 Configuration ----------
-s3_bucket = "your-s3-bucket-name"
-s3_video_key = "your-video.mp4"  # S3 key for the video file
-local_video_path = "downloaded_video.mp4"
+s3_bucket = "cv-test-0314"  # S3 bucket name
+s3_video_key = "WIN_20250314_12_56_22_Pro.mp4"  # S3 key for the video file
+local_video_path = "my_video.mp4"
 
 # Initialize S3 client
 s3 = boto3.client('s3')
@@ -26,9 +26,9 @@ def download_video_from_s3():
         exit(1)
 
 # ---------- Email Settings ----------
-from_email = "sprav@gmail.com"
-password = ""
-to_email = "prv@gmail.com"
+from_email = "spraveen4512@gmail.com"
+password = "teyb ieto njei guui"
+to_email = "prvnsmstt@gmail.com"
 
 # ---------- Create CSV File & Image Directory ----------
 csv_file = "alerts_log.csv"
