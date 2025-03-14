@@ -116,7 +116,7 @@ def process_video():
                 log_alert(frame, new_objects)  # Log alert with image
                 last_alert_time = time.time()
 
-        cv2.imshow("Monitoring", results[0].plot())  # Display video
+        #cv2.imshow("Monitoring", results[0].plot())  # Display video
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
